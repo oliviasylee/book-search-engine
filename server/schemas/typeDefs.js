@@ -26,6 +26,7 @@ const typeDefs = gql`
 
   # me query represents the currently authenticated user and returns a User type
   type Query {
+    user(id: ID, username: String): User
     me: User
   }
 
