@@ -18,13 +18,13 @@ const typeDefs = gql`
     link: String
   }
 
-// Contains token and optional User for authentication and references the User type
+  # Contains token and optional User for authentication and references the User type
   type Auth {
     token: ID!
     user: User
   }
 
-// me query represents the currently authenticated user and returns a User type
+  # me query represents the currently authenticated user and returns a User type
   type Query {
     me: User
   }
