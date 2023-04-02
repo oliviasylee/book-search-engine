@@ -14,7 +14,7 @@ const db = require('./config/connection');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-// Create GraphQL server with authentication middleware.
+// Create GraphQL server with authentication middleware
 const server = new ApolloServer({
   typeDefs,
   resolvers,
