@@ -5,6 +5,7 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
+// Apollo Client is a client library for sending queries to and retrieving data from a GraphQL API
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
@@ -12,6 +13,7 @@ const client = new ApolloClient({
 
 function App() {
   return (
+    // Component that makes the Apollo Client available throughout our React app
     <ApolloProvider client={client}>
       <Router>
         <>
