@@ -36,12 +36,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-// Apollo Client is a client library for sending queries to and retrieving data from a GraphQL API
-// const client = new ApolloClient({
-//   uri: '/graphql',
-//   cache: new InMemoryCache(),
-// });
-
 function App() {
   return (
     // Component that makes the Apollo Client available throughout our React app

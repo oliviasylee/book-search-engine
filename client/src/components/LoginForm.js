@@ -13,12 +13,11 @@ const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
-    // 'loginUser' function handles 'LOGIN_USER' mutation using useMutation
-  const [loginUser, { error, data }] = useMutation(LOGIN_USER);
+  // 'login' function handles 'LOGIN_USER' mutation using useMutation
+  const [login, { error, data }] = useMutation(LOGIN_USER);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    
     setUserFormData({ 
       ...userFormData, 
       [name]: value });
@@ -36,13 +35,10 @@ const LoginForm = () => {
     }
 
     try {
-      const { data } = await loginUser({
+      const { data } = await login({
         variables: { ...userFormData },
       });
-
-      const { token, user } = data.loginUser;
-      console.log(user);
-      Auth.login(token);
+      Auth.login(data.login.token);
     } catch (err) {
       console.error(err);
       setShowAlert(true);
