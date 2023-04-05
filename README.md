@@ -12,7 +12,7 @@ This Book Search Engine is developed with a GraphQL API utilizing the MERSN stac
 - To use the application on your local machine, download or clone the repository. After navigating to the root directory, run the command npm i to install the necessary dependencies.
 
 ## Live Site
-Live application deployed at: [Click here](https://oliviasylee.github.io/my-react-portfolio/) <br> <br>
+Live application deployed at: [Click here](https://book-search-engine-oslee.herokuapp.com/) <br> <br>
 
 ![preview](./client/public/images/mainpage.png)
 
