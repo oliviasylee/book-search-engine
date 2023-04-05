@@ -25,7 +25,7 @@ Live application deployed at: [Click here](https://oliviasylee.github.io/my-reac
 
 | Sign up | Login |
 |-----------|-----------|
-| ![contact](./client/public/images/sing-up.png)|![resume](./client/public/images/login.png)|
+| ![contact](./client/public/images/sign-up.png)|![resume](./client/public/images/login.png)|
 
 | Saved books |
 |----------------------|
