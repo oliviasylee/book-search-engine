@@ -97,7 +97,7 @@ const SearchBooks = () => {
 
   return (
     <>
-      <div className="bg-dark text-light p-5">
+      <div className="text-dark p-5 searchBar">
         <Container>
           <h1>Search for Books!</h1>
           <Form onSubmit={handleFormSubmit}>
@@ -109,11 +109,14 @@ const SearchBooks = () => {
                   onChange={(e) => setSearchInput(e.target.value)}
                   type="text"
                   size="lg"
-                  placeholder="Search for a book"
+                  placeholder="Search books"
                 />
               </Col>
               <Col xs={12} md={4} className="d-grid">
-                <Button type="submit" variant="success" size="lg">
+                <Button 
+                type="submit" 
+                size="lg"
+                className="searchButton">
                   Submit Search
                 </Button>
               </Col>
@@ -123,6 +126,7 @@ const SearchBooks = () => {
       </div>
   
       <Container>
+      <br />
         <h2>
           {searchedBooks.length
             ? `Viewing ${searchedBooks.length} results:`

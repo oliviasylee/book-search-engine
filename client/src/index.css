@@ -1,5 +1,6 @@
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 h1,
@@ -8,10 +9,29 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .small {
   font-weight: 300;
   font-style: italic;
+}
+
+.searchButton {
+  background-color: #de9151ff;
+  color: #212121ff ;
+}
+
+.searchButton:hover {
+  background-color: #f4efe6ff;
+  color: #212121ff ;
+}
+
+.searchBar {
+  background-color: #f4efe6ff;
+}
+
+.savedBar {
+  background-color: #f4efe6ff;
 }

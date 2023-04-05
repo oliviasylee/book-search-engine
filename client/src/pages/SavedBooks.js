@@ -49,7 +49,7 @@ const SavedBooks = () => {
 
   return (
     <>
-      <div className="bg-dark text-light p-5">
+      <div className="text-dark p-5 savedBar">
         <Container>
           <h1>Viewing saved books!</h1>
         </Container>
